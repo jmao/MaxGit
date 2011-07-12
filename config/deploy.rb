@@ -16,7 +16,11 @@ role :db,  "your slave db-server here"
 namespace :deploy do
   task :start do 
     begin
+<<<<<<< HEAD
+      run 'ssh aa@ddd'
+=======
       run 'ssh aaa@dd'
+>>>>>>> master
     rescue Exception => e
       logger.debug('failed')
     end
